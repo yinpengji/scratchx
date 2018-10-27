@@ -9,6 +9,12 @@ In simple, the solution is to use a seperated server in the middle of ScratchX a
 - BluetoothWSServer: The Bluetooth connection Server in the middle. Using Bluetooth to connect a "BT04-A" on Arduino. Also containing a WebSocket server to connect to the ScratchX extention.
 - ScratchX: The Scrach Extension. It uses websocket to connect with the BluetoothWSServer.
 
+# Usage
+
+1. Start Arudino, make sure the bluetooth started.
+2. Start the websocket server.
+3. Load the scratch extention from ScratchX.
+
 # Why doing this
 
 My 7 years old son took one programming class in Apple store. In the calss all the children used sphero https://www.sphero.com/ and an IDE likes Scratch to learn how to programming. They practiced how to use those programming blocks to control a sphero bot to work out a maze.
@@ -21,6 +27,7 @@ From the Scratch site, I saw 2 kinds of extensions, one is ScratchX, another one
 
 When working on the websocket server, my first choice is using nodejs, while it's hard to find a workable bluetooth lib in node for connecting my BT04-A. So use the C# code since the bluetooth part has already working, and there's some good lib for websocket service. JSON is used for the command transfered between the ScratchX and the Arduino.
 
-# TODO
+# TODO:
+- The code need to be refined, of course ;)
 - Add a 9025 module to report the angle of the car.
 - Target is to use ipad contorl the car. Still need to find how to make the extention run from ipad.
