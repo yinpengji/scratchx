@@ -14,6 +14,8 @@ In simple, the solution is to use a seperated server in the middle of ScratchX a
 1. Start Arudino, make sure the bluetooth started.
 2. Start the websocket server. You'll have to change the bluetooth device name and pin in the code. 
 3. Load the scratch extention from ScratchX.
+   e.g. Go to http://localhost:8088/#scratch, in case you downloaded the ScrachX web package and put then under your webserver.
+   Press shift and click "Load Experimental Extension", choose the arduinocar.js to load all the modules.
 
 # Why doing this
 
